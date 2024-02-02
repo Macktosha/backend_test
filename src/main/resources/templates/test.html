@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Home</title>
+    <style>
+        @keyframes colorchange {
+            0% { color:lightsteelblue; }
+            50% { color: black; }
+            100% { color: blue; }
+        }
+        h1 {
+            animation-name: colorchange;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            font-family: "Fira Sans",system-ui;
+        }
+
+    </style>
+</head>
+<body>
+<h1 th:text="'Hello, Prachka.tech!'" th:align="'center'" ></h1>
+<p th:text="${personModel}"/>
+</body>
+</html>
